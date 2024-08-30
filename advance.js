@@ -1,6 +1,19 @@
-// let months = ["January", "February", "March", "April", "May"];
+// objects ---------------------------------------------------------------
+const user = {
+    name: 'Sarthak',
+    age: 21,
+    email: 'sarthak@gmail.com',
+    isLoggedIn: true,
+    lastLoggedIn: ['monday', 'wednesday', 'saturday', 'sunday'],
+}
+console.log(user.email)
+console.log(user['email'])  // this is correct way to access the value
 
-// 1. map
+
+
+
+// 1. map ---------------------------------------------------------------
+// let months = ["January", "February", "March", "April", "May"];
 // map() creates a new array from calling a function for every array element 
 // map does not change the original array
 
@@ -10,7 +23,7 @@
 // });
 
 
-// 2. Filter
+// 2. Filter ---------------------------------------------------------------
 // filter() method is used to create a new array that contains only the element from the original from the array
 
 // the element that is stored into the new array is depended apon returned condition
@@ -52,7 +65,7 @@
 
 
 
-//try catch block
+//try catch block ---------------------------------------------------------------
 // const user = {
 //     name: "Tushar",
 //     age: 21,
@@ -73,7 +86,7 @@
 
 
 
-// fetch api 
+// fetch api  ---------------------------------------------------------------
 // fetch("https://dummyjson.com/products").then((res) => {
 //     return res.json();
 // }).then((data) => {
@@ -90,14 +103,14 @@
 // })
 
 
-// async and await
-async function request(){
-    let sleep = setTimeout(function sleep(){
-        console.log("Hello, Good Morning");
-    },5000)
+// async and await ---------------------------------------------------------------
+// async function request(){
+//     let sleep = setTimeout(function sleep(){
+//         console.log("Hello, Good Morning");
+//     },5000)
 
-    let result = fetch(sleep);
-    console.log(result);
-}   
+//     let result = fetch(sleep);
+//     console.log(result);
+// }   
 
-request();
+// request();
