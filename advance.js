@@ -1,16 +1,40 @@
 // objects ---------------------------------------------------------------
-const user = {
-    name: 'Sarthak',
+// special datatype (symbol)
+
+const sym = Symbol("key1");
+const user = {   // this is a non-singleton
+    name: "Sarthak",
+    [sym]: "key1",
     age: 21,
-    email: 'sarthak@gmail.com',
+    email: "sarthak@gmail.com",
     isLoggedIn: true,
-    lastLoggedIn: ['monday', 'wednesday', 'saturday', 'sunday'],
+    lastLoggedIn: ["monday", "wednesday", "saturday", "sunday"],
 }
-console.log(user.email)
-console.log(user['email'])  // this is correct way to access the value
+
+// accessing the value of object
+// console.log(user.email);
+// console.log(user[sym]);
+// console.log(user["email"])  // this is correct way to access the value
 
 
+// changing value of the object
+// user.email = "sarthak@google.com";
+// console.log(user["email"])
 
+
+// addaing key value into object
+user.greeting = function(){
+    console.log(`Hello JS user, ${this.name}`);  //if we are refrencing to same object we use this keyword to access its properties
+}
+// console.log(user.greeting());
+
+
+// singleton object
+const student = new Object();  // this is a singleton object
+student.name = "Tushar";
+student.id = "001";
+student.passedOut = true;
+console.log(student);
 
 // 1. map ---------------------------------------------------------------
 // let months = ["January", "February", "March", "April", "May"];
