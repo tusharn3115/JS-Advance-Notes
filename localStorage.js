@@ -5,4 +5,13 @@
 
 // eg :
 const nameElem = document.querySelector("#name-tag");
+const nameInput = document.querySelector(".name");
 nameElem.innerText = localStorage.myName; // localStorage is where out key and value is stored and .myName is the key which has the value i.e my name and at the place of the const nameElem my name that is stored into the local storage will be printed.
+
+
+// updating the value of the key in the local storage with the help of input box
+// what ever input will be written in the inputbox, it will update the value of the key in the local storage
+nameInput.addEventListener('input', function(input){
+    localStorage.myName = input.target.value;
+    nameElem.innerText = localStorage.myName;
+})
