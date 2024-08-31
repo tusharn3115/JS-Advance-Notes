@@ -148,6 +148,39 @@ function one(){
 
 
 
+// this keyword ------------------------------------------------------------------------------
+const data = {
+    user: "Sam",
+    price: 999,
+    welcomeMsg: function(){
+        console.log(`${this.user}, welcome to website`);
+        // this keyword refers to the current context and the value present in it
+    }
+}
+data.welcomeMsg();
+
+
+
+// arrow function ---------------------------------------------------------------------
+
+// const chai = function(){  // this is normal function
+//     let username = "sam"
+//     // console.log(this);
+// }
+// chai();
+
+// const chai = () => {  // this is arrow function in which function keyword is not required instead we use arrow made with equal sign with greater than sign
+//     let username = "sam"
+//     // console.log(this);
+// }
+// chai();
+
+
+// implicite return function
+const add = (num1, num2) => (num1 + num2);  // in this type of function we don't wrap our function code in parentheses but without parentheses with out with out curly brackets but in this we do not use return
+
+// if you want to pass object in a function we have to wrap that object into curly brackets else it will give undefined
+const addNum = (num1, num2) => ({username: "sam"});
 
 
 
