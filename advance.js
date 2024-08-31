@@ -157,7 +157,7 @@ const data = {
         // this keyword refers to the current context and the value present in it
     }
 }
-data.welcomeMsg();
+// data.welcomeMsg();
 
 
 
@@ -181,6 +181,16 @@ const add = (num1, num2) => (num1 + num2);  // in this type of function we don't
 
 // if you want to pass object in a function we have to wrap that object into curly brackets else it will give undefined
 const addNum = (num1, num2) => ({username: "sam"});
+
+
+
+// iife - immediately invoke function expression --------------------------------
+(function connect(){
+    console.log("DB CONNECTED");
+}())
+// (first bracket is for function defination)(second bracket if for execution call)
+// iffe function executes immideately
+// but somethimes there is problem with global pollution so to remove the global scope variable, declaration pollution we use iife 
 
 
 
