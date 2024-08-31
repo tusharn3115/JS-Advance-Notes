@@ -77,6 +77,39 @@ const {courseName: Cname} = course;
 
 
 
+// function -----------------------------------------------------------------------------------
+// function calculateCartPrice(...num1){  // ... represents rest operator this will pack all the agrument into a single array
+//     return num1;
+// }
+// console.log(calculateCartPrice(200,300,500,800));
+
+
+// object used in function
+// const myCart = {
+//     user: "Hardik",
+//     product: 2,
+//     totalPrice: "1500rs"
+// }
+
+function cart(obj){
+    console.log(`Username is ${obj.user} and price is ${obj.totalPrice}`);
+    
+}
+// cart(myCart);
+// cart({
+//         user: "Hardik",
+//         product: 2,
+//         totalPrice: "1500rs"
+//     })
+
+
+
+// array used in function
+
+
+
+
+
 // 1. map ---------------------------------------------------------------
 // let months = ["January", "February", "March", "April", "May"];
 // map() creates a new array from calling a function for every array element 

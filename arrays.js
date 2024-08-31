@@ -56,5 +56,13 @@ const marvel2 = ["capitanamerica","doctorstrange"];
 
 
 // using spread operator
+// spread operator spreads all the element of arrays individually into new empty array
 const all_heros = [...marvel1, ...marvel2];
-console.log(all_heros);
+// console.log(all_heros);
+
+
+// flat operator
+// The flat() method concatenates sub-array elements into a single array
+const another_arr = [1,2,3,4,[5,6,[7,8,9]]];
+const newAnother_arr = another_arr.flat(Infinity);
+console.log(newAnother_arr);
