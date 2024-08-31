@@ -34,7 +34,33 @@ const student = new Object();  // this is a singleton object
 student.name = "Tushar";
 student.id = "001";
 student.passedOut = true;
-console.log(student);
+// console.log(student);
+
+
+// object nesting
+const admin = {
+    email: "tushar@gmail.com",
+    adminName: {
+        fullname: {
+            firstName: "Tushar",
+            lastName: "Negi",
+        }
+    }
+}
+// console.log(admin.adminName.fullname.firstName);
+ 
+
+// combining objects
+const obj1 = {1:"a", 2:"b"};
+const obj2 = {3:"c", 4:"d"};
+const obj = Object.assign({}, obj1, obj2)  // {} empty object is passed its optional but it indicates that obj1 and obj2 will combine a give a new object or will gives us an object
+// console.log(obj);
+
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
+
+
 
 // 1. map ---------------------------------------------------------------
 // let months = ["January", "February", "March", "April", "May"];
