@@ -55,10 +55,24 @@ const obj1 = {1:"a", 2:"b"};
 const obj2 = {3:"c", 4:"d"};
 const obj = Object.assign({}, obj1, obj2)  // {} empty object is passed its optional but it indicates that obj1 and obj2 will combine a give a new object or will gives us an object
 // console.log(obj);
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));
 
-console.log(Object.keys(obj));
-console.log(Object.values(obj));
-console.log(Object.entries(obj));
+
+// Object de-structure
+// De-structuring is a js expression that allows you to extract data from an array, object and map an set those extracted data into a new variable
+// it allows us to extract multiple properties at a time 
+const course = {
+    courseName: "full-stack course",
+    language: "hindi",
+    price: "1499rs",
+    courseInstructor: "Suraj Singh",
+}
+// syntax to de-structure object
+const {courseInstructor: instructor} = course;
+console.log(instructor);
+
 
 
 
