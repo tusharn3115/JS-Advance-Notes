@@ -71,8 +71,9 @@ const course = {
 }
 // syntax to de-structure object
 const {courseInstructor: instructor} = course;
-console.log(instructor);
-
+const {courseName: Cname} = course;
+// console.log(instructor);
+// console.log(Cname);
 
 
 
@@ -178,3 +179,15 @@ console.log(instructor);
 // }   
 
 // request();
+
+
+
+// api is js -----------------------------------------------------------------------------
+// api stands for application programming interface
+// 
+
+// {
+//     "courseName": "js in hindi",
+//     "language": "hindi",
+//     "price": "1499rs",
+// }
