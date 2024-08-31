@@ -40,11 +40,21 @@ const newArr2 = myArr.splice(1,3) // what splice method do is same as slice but 
 
 // the main difference b/w slice and splice is not that slice do not includes the end index and splice includes last index, but in slice original array connot be manipulate but using splice the original array is manipulated and the original array includes the spliced value
 
+
+// combining arrays 
 const marvel1 = ["ironman","spiderman"];
 const marvel2 = ["capitanamerica","doctorstrange"];
 
+// using push method
 // marvel1.push(marvel2);
 // console.log(marvel1);
 
-const allHero = marvel1.concat(marvel2);
-console.log(allHero);
+
+// using concat method
+// const allHero = marvel1.concat(marvel2);
+// console.log(allHero);
+
+
+// using spread operator
+const all_heros = [...marvel1, ...marvel2];
+console.log(all_heros);
