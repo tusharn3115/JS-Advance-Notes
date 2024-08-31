@@ -105,7 +105,13 @@ function cart(obj){
 
 
 // array used in function
+// const myArr = [200,300,400,500];
 
+function totalPrice(getArray){
+    return getArray[3];
+}
+// console.log(totalPrice(myArr));
+console.log(totalPrice([200,300,400,500]));
 
 
 
