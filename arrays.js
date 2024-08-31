@@ -21,8 +21,21 @@ myArr.shift(); // shift method is same as pop method but remove value from the s
 
 
 // console.log(myArr.includes(5)); // includes method is a questionnaire method which help us to verify if the asked or given value in included in the array and the result is returned into a boolean value 
-
 // console.log(myArr.indexOf(0)); // indexOf method help us to find the index or position of the given value
 
 
-const newArr = myArr.join
+const newArr = myArr.join() // join method adds all the elements of an array into a string, separated by the specified separator string.
+// console.log(newArr);
+
+
+// slice and splice
+console.log("A ", myArr);
+const newArr1 = myArr.slice(1,3) // what slice method do is it will give you the elements b/w the index 0 and 3 so result will be 1 and 2 and 3 will not be included i.e the last index given is not included 
+console.log(newArr1);
+
+
+const newArr2 = myArr.splice(1,3) // what splice method do is same as slice but it includes the last index and its value, so the result will be 1,2,3
+console.log("B ", myArr);
+console.log(newArr2);
+
+// the main difference b/w slice and splice is not that slice do not includes the end index and splice includes last index, but in slice original array connot be manipulate but using splice the original array is manipulated and the original array includes the spliced value
