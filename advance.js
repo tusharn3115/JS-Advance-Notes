@@ -111,7 +111,42 @@ function totalPrice(getArray){
     return getArray[3];
 }
 // console.log(totalPrice(myArr));
-console.log(totalPrice([200,300,400,500]));
+// console.log(totalPrice([200,300,400,500]));
+
+// scopes --------------------------------------------------------------------------
+
+//local scope and global scope
+// local scope - variable are only accessible inside the function in which these variable were declared
+// global scope - variable which are declare outside the function can be accessible inside the function
+const username = "tushar"
+function gg(){
+    const greet = "hi"; 
+    console.log(greet);
+    console.log(username);
+}
+// console.log(greet);
+// gg();
+
+
+
+// nested scope
+function one(){
+    const user = "Tushar";
+    
+    function two(){
+        const website = "Youtube"
+        console.log(user);
+    }
+    // console.log(website); // will give error
+    // two();  // no error function two() can access the varibles of function one() i.e user
+}
+// one(); 
+
+// in nested scope the child function or the function inside a function can access the variable declare inside his function as well as outside but inside the parent function because for inner / child function the parent function is global
+
+// but parent function cannot access the variable declared inside the child / inner function
+
+
 
 
 
