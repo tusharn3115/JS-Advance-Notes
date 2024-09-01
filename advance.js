@@ -185,12 +185,20 @@ const addNum = (num1, num2) => ({username: "sam"});
 
 
 // iife - immediately invoke function expression --------------------------------
-(function connect(){
+(function connect(){  // this is a named iife 
     console.log("DB CONNECTED");
-}())
+}());
+
+(() => {  // normal iife
+    console.log("hello");
+})();
 // (first bracket is for function defination)(second bracket if for execution call)
 // iffe function executes immideately
 // but somethimes there is problem with global pollution so to remove the global scope variable, declaration pollution we use iife 
+
+
+// javascript execution context -----------------------------------------------------------------------
+
 
 
 
