@@ -229,20 +229,21 @@ const addNum = (num1, num2) => ({username: "sam"});
 
 const arr = [1,2,3,4,5];
 for(const num of arr){  // num is variable and arr mean object i.e in which you want to use this array like in an array or object.
-    console.log(num);
+    // console.log(num);
 }
 
 
 
 // 1. map ---------------------------------------------------------------
-// let months = ["January", "February", "March", "April", "May"];
+let months = ["January", "February", "March", "April", "May"];
 // map() creates a new array from calling a function for every array element 
 // map does not change the original array
+// there is no duplicate values in map collection, only unique values are stored
 
-// var mappedArr = months.map((months, index) => {
-//     console.log(index, months)
-//     return arr;
-// });
+var mappedArr = months.map((months, index) => {
+    // console.log(index, months)
+    return arr;
+});
 
 
 // 2. Filter ---------------------------------------------------------------
