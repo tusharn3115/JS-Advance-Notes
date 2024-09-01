@@ -198,7 +198,20 @@ const addNum = (num1, num2) => ({username: "sam"});
 
 
 // javascript execution context -----------------------------------------------------------------------
+// 1. GLobal EC
+// when ever we create a js code, first of all Global EC is created with a variable this in which this Global execution context resides
 
+// for browser the execution context for this is window
+
+// 2. Function EC
+// 3. Eval EC
+
+// the javascript code is executed into 2 phases 
+// 1. Memory creation phase
+// in memory creation phase what ever varible we have declare or any other thing, a memeory is allocated for them but execution is not done only memory allocation is done in this phase
+
+// 2.Execution phase
+// in this phase the js code is executed
 
 
 
