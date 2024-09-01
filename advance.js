@@ -213,6 +213,13 @@ const addNum = (num1, num2) => ({username: "sam"});
 // 2.Execution phase
 // in this phase the js code is executed
 
+// in functions, whenever a function is defined its new variable enviroment is created and is also deleted lated when done execution
+
+
+// call stack in js -------------------------------------------------------------
+// firstly comes our global exectution context 
+// JavaScript uses a Call Stack to track the functions in a program. The call stack works on the Last In, First Out (LIFO) principle. This means that the most recently called function will be the first to be completed. Whenever a function is called, a new frame is added to the top of the stack.
+
 
 
 // 1. map ---------------------------------------------------------------
