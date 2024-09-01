@@ -231,8 +231,21 @@ const arr = [1,2,3,4,5];
 for(const num of arr){  // num is variable and arr mean object i.e in which you want to use this array like in an array or object.
     // console.log(num);
 }
+// for of loop returns the value of array and not the key
+// we cannot iterate for of loop over a object  
 
 
+// 2. For in loop: 
+// mostly used to iterate objects
+const myobj = {
+    cpp: "c++",
+    js: "javascript",
+    c: "c language"
+}
+
+for(const key in myobj){
+    console.log(`${key} is shortcut for ${myobj[key]}`);
+}
 
 // 1. map ---------------------------------------------------------------
 let months = ["January", "February", "March", "April", "May"];
@@ -244,6 +257,8 @@ var mappedArr = months.map((months, index) => {
     // console.log(index, months)
     return arr;
 });
+
+ 
 
 
 // 2. Filter ---------------------------------------------------------------
