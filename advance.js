@@ -186,11 +186,11 @@ const addNum = (num1, num2) => ({username: "sam"});
 
 // iife - immediately invoke function expression --------------------------------
 (function connect(){  // this is a named iife 
-    console.log("DB CONNECTED");
+    // console.log("DB CONNECTED");
 }());
 
 (() => {  // normal iife
-    console.log("hello");
+    // console.log("hello");
 })();
 // (first bracket is for function defination)(second bracket if for execution call)
 // iffe function executes immideately
@@ -222,6 +222,15 @@ const addNum = (num1, num2) => ({username: "sam"});
 // A call stack is a mechanism for an interpreter to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
 
 // JavaScript uses a Call Stack to track the functions in a program. The call stack works on the Last In, First Out (LIFO) principle. This means that the most recently called function will be the first to be completed. Whenever a function is called, a new frame is added to the top of the stack.
+
+
+// High Order Array loops -----------------------------------------------------------------
+// 1. For of loop:
+
+const arr = [1,2,3,4,5];
+for(const num of arr){  // num is variable and arr mean object i.e in which you want to use this array like in an array or object.
+    console.log(num);
+}
 
 
 
