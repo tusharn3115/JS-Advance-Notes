@@ -132,3 +132,25 @@ var mappedArr = months.map((months, index) => {
 
 
 // chaining in js ---------------------------------------------------------
+const numb = [1,2,3,4,5,6,7,8,9,10];
+
+const newNumb = numb.map((num)=>{return num*10})
+                    .map((num)=>{return num+1})
+                    .filter((num)=>{return num >= 40});
+// console.log(newNumb);
+
+
+
+
+// reduce in js ------------------------------------------------------------
+// The array reduce in JavaScript is a predefined method used to reduce an array to a single value by passing a callback function on each element of the array.
+
+const myNum = [1,2,3,4,5];
+const myTotal = myNum.reduce(function(accumulator, currentValue){ // accumulator stores the value given after the function closes i.e given 0 or the initial value bcoz it did'nt know what to store but after first iteration it stores the new result returned every time when operation is performed 
+    
+// current value is which value is selected from the array
+
+    console.log(`accumulator is ${accumulator} and current value is ${currentValue}`);
+    return accumulator + currentValue;
+},0);
+console.log(myTotal);
