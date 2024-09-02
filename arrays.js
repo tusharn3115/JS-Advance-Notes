@@ -150,7 +150,35 @@ const myTotal = myNum.reduce(function(accumulator, currentValue){ // accumulator
     
 // current value is which value is selected from the array
 
-    console.log(`accumulator is ${accumulator} and current value is ${currentValue}`);
+    // console.log(`accumulator is ${accumulator} and current value is ${currentValue}`);
     return accumulator + currentValue;
 },0);
-console.log(myTotal);
+// console.log(myTotal);
+
+
+// practice question
+// add the total price of the items in the shopping cart
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+const initialValue = 0;
+const totalPrice = shoppingCart.reduce((accumulator, currentVal) => {
+    return accumulator + currentVal.price;
+},initialValue)
+console.log(`Your total price is ${totalPrice}rs`);
