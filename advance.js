@@ -177,7 +177,7 @@ const data = {
 
 
 // implicite return function
-const add = (num1, num2) => (num1 + num2);  // in this type of function we don't wrap our function code in parentheses but without parentheses without curly brackets but in this we do not use return
+const add = (num1, num2) => (num1 + num2);  // in this type of function we don't wrap our function code in parentheses but without parentheses with curly brackets but in this we do not use return
 
 // if you want to pass object in a function we have to wrap that object into curly brackets else it will give undefined
 const addNum = (num1, num2) => ({username: "sam"});
