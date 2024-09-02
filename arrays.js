@@ -65,4 +65,70 @@ const all_heros = [...marvel1, ...marvel2];
 // The flat() method concatenates sub-array elements into a single array
 const another_arr = [1,2,3,4,[5,6,[7,8,9]]];
 const newAnother_arr = another_arr.flat(Infinity);
-console.log(newAnother_arr);
+// console.log(newAnother_arr);
+
+
+
+
+// foreach loop for array -------------------------------------------------------------
+// foreach loops are specifically for arrays.
+// if we try to store this foreach loop into variable and then print the output we will get undefined because by default for each loop do not returns any value back
+
+let arr = ['js', 'html', 'css', 'react'];
+
+let val = arr.forEach((lang) => {
+    // console.log(lang);
+})
+// console.log(val);
+// but if we want some condition to be applied then it can't be done with the help of foreach loop
+// to do so we user filter method
+
+
+
+
+// 2. Filter ---------------------------------------------------------------
+// filter() method is used to create a new array that contains only the element from the original from the array
+
+// the element that is stored into the new array is depended apon returned condition
+// let months = ["January", "February", "March", "April", "May", "November", "December"];
+
+// var filteredArr = months.filter((months, index, array) => {
+//     return months.toLowerCase().includes("m");
+//     // so only months with letters 5 or less will be stored into filteredArr i.e the new array that it makes
+// });
+
+// practice question
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+  ];
+
+  const userbooks = books.filter((bks)=>{
+    // return bks.genre === "History";
+    // return bks.edition > 2000;
+  })
+//   console.log(userbooks);
+  
+
+
+
+// 1. map ---------------------------------------------------------------
+let months = ["January", "February", "March", "April", "May"];
+// map() creates a new array from calling a function for every array element 
+// map does not change the original array
+// there is no duplicate values in map collection, only unique values are stored
+
+var mappedArr = months.map((months, index) => {
+    // console.log(index, months)
+    return arr;
+});
+
+
+// chaining in js ---------------------------------------------------------
