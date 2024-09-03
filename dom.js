@@ -10,4 +10,5 @@ const week = document.querySelector(".week");
 
 const days = document.querySelector(".days");
 // console.log(days);
-console.log(days.parentElement);
+// console.log(days.parentElement);
+console.log(days.nextElementSibling);
