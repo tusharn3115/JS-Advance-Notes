@@ -27,4 +27,4 @@ div.style.backgroundColor = "blue";   // adding styling
 div.style.padding = "25px";
 const text = document.createTextNode("Hello form js");
 div.appendChild(text);  // appendChild is adding text to div
-document.body.appendChild(div);  // showing our div to browser web page by using appendChild to body
+// document.body.appendChild(div);  // showing our div to browser web page by using appendChild to body
