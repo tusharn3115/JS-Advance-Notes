@@ -49,8 +49,20 @@ function addOptiLanguage(langName){
     li.appendChild(document.createTextNode(langName));
     document.querySelector('.language').appendChild(li);
 }
-addOptiLanguage("");
-addOptiLanguage("goLang");
+addOptiLanguage("c++");
+addOptiLanguage("golang");
+
 
 // edit element ------------------
-const editLang = document.querySelector("li:nth-child()")
+const thirdLang = document.querySelector("li:nth-child(3)");
+const newLi = document.createElement("li");
+newLi.textContent = "mojo";
+thirdLang.replaceWith(newLi);
+
+const firstLang = document.querySelector("li:first-child");
+firstLang.outerHTML = "<li>c language</li>"
+
+
+// remove element ----------------
+const lastlang = document.querySelector("li:last-child");
+lastlang.remove();
