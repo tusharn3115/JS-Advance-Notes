@@ -39,9 +39,9 @@ document.getElementById('plant').addEventListener("click", ()=> {
 // true - capturing and this is the correct method
 
 document.getElementById('images').addEventListener("click", ()=> {
-    console.log("clicked inside li");
+    // console.log("clicked inside li");
 },true);
 
 document.getElementById('plant').addEventListener("click", ()=> {
-    console.log("clicked plant");
+    // console.log("clicked plant");
 },true);
