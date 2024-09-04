@@ -60,7 +60,7 @@ document.getElementById('images').addEventListener("click", (e)=> {
 
 document.getElementById('plant').addEventListener("click", (e)=> {
     // console.log("clicked plant");
-    e.stopPropagation();
+    // e.stopPropagation();
 });
 
 
@@ -69,8 +69,8 @@ document.getElementById('plant').addEventListener("click", (e)=> {
 // preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur
 
 document.getElementById("google").addEventListener("click", (e)=>{
-    e.preventDefault();
-    e.stopPropagation();
+    // e.preventDefault();
+    // e.stopPropagation();
     // console.log("Google Clicked");
 })
 
@@ -78,3 +78,6 @@ document.getElementById("google").addEventListener("click", (e)=>{
 // Practice js question ------------------------------------------
 // when we click on image the image will be removed ?
 
+document.getElementById("images").addEventListener('click', (e)=> {
+    console.log(e.target)
+})
