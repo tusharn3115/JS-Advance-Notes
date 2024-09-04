@@ -16,11 +16,11 @@ document.getElementById("plant").addEventListener("click", (e)=> {
 
 // event propogation
 // 1. Bubbling (default or false bhi likhte hai as third parameter in addEventListner)
-document.getElementById('images').addEventListener('click', ()=> {
+document.getElementById('images').addEventListener("click", ()=> {
     console.log("clicked inside li");
 });
 
-document.getElementById('plant').addEventListener('click', ()=> {
+document.getElementById('plant').addEventListener("click", ()=> {
     console.log("clicked plant");
 });
 
