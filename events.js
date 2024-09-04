@@ -73,3 +73,8 @@ document.getElementById("google").addEventListener("click", (e)=>{
     e.stopPropagation();
     // console.log("Google Clicked");
 })
+
+
+// Practice js question ------------------------------------------
+// when we click on image the image will be removed ?
+
