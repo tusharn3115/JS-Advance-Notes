@@ -29,3 +29,19 @@ document.getElementById('plant').addEventListener("click", ()=> {
 // but jb hm plant img per click krte hai toh second event run hona chahiye but plant li ke under bhi to hai and li per bhi event lga hai toh phele plant wala event run hoga then li wala event run hoga 
 
 // like a bubble floats from down to up like wise plant wala event phele print hoga and then li wala event print krega.
+
+
+// 2. Capturing
+// capturing jata hai top to bottom but to use this eventListner by default flase hota hai we have to make it true
+
+// eventListner("event", function(){}, false / true)
+// false - bubbling and by default hota hai
+// true - capturing and this is the correct method
+
+document.getElementById('images').addEventListener("click", ()=> {
+    console.log("clicked inside li");
+},true);
+
+document.getElementById('plant').addEventListener("click", ()=> {
+    console.log("clicked plant");
+},true);
