@@ -55,11 +55,11 @@ document.getElementById('plant').addEventListener("click", ()=> {
 // we have to pass some parameters and to that parameter we will pass stopPropogation()
 
 document.getElementById('images').addEventListener("click", (e)=> {
-    console.log("clicked inside li");
+    // console.log("clicked inside li");
 });
 
 document.getElementById('plant').addEventListener("click", (e)=> {
-    console.log("clicked plant");
+    // console.log("clicked plant");
     e.stopPropagation();
 });
 
