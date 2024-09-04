@@ -13,3 +13,19 @@ document.getElementById("plant").addEventListener("click", (e)=> {
 })
 
 
+
+// event propogation
+// 1. Bubbling (default or false bhi likhte hai as third parameter in addEventListner)
+document.getElementById('images').addEventListener('click', ()=> {
+    console.log("clicked inside li");
+});
+
+document.getElementById('plant').addEventListener('click', ()=> {
+    console.log("clicked plant");
+});
+
+// now jb tk hm click krte hai images or li ke under tb phela event chalega and clicked inside li print hoga console per
+
+// but jb hm plant img per click krte hai toh second event run hona chahiye but plant li ke under bhi to hai and li per bhi event lga hai toh phele plant wala event run hoga then li wala event run hoga 
+
+// like a bubble floats from down to up like wise plant wala event phele print hoga and then li wala event print krega.
