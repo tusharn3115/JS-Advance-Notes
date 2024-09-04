@@ -17,11 +17,11 @@ document.getElementById("plant").addEventListener("click", (e)=> {
 // event propogation
 // 1. Bubbling (default or false bhi likhte hai as third parameter in addEventListner)
 document.getElementById('images').addEventListener("click", ()=> {
-    console.log("clicked inside li");
+    // console.log("clicked inside li");
 });
 
 document.getElementById('plant').addEventListener("click", ()=> {
-    console.log("clicked plant");
+    // console.log("clicked plant");
 });
 
 // now jb tk hm click krte hai images or li ke under tb phela event chalega and clicked inside li print hoga console per
@@ -45,3 +45,20 @@ document.getElementById('images').addEventListener("click", ()=> {
 document.getElementById('plant').addEventListener("click", ()=> {
     // console.log("clicked plant");
 },true);
+
+
+// 3. Stop Propogation
+// sometimes we don't want do buble element and also the result not to printed in case such as capturing 
+
+// to do so we use stopPropogation() jiseh bubbling nhi hogi and upper element ka result bhi show nhi hoga
+
+// we have to pass some parameters and to that parameter we will pass stopPropogation()
+
+document.getElementById('images').addEventListener("click", (e)=> {
+    console.log("clicked inside li");
+});
+
+document.getElementById('plant').addEventListener("click", (e)=> {
+    console.log("clicked plant");
+    e.stopPropagation();
+});
