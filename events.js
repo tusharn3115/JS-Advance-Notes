@@ -79,5 +79,11 @@ document.getElementById("google").addEventListener("click", (e)=>{
 // when we click on image the image will be removed ?
 
 document.getElementById("images").addEventListener('click', (e)=> {
-    console.log(e.target)
+    // console.log(e.target.parentNode);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        const remove = e.target.parentNode;
+        remove.remove();
+    }
+    // remove.style.display = "none";
 })
