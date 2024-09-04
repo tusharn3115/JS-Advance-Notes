@@ -62,3 +62,14 @@ document.getElementById('plant').addEventListener("click", (e)=> {
     console.log("clicked plant");
     e.stopPropagation();
 });
+
+
+
+// 4. Prevent Default
+// preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur
+
+document.getElementById("google").addEventListener("click", (e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+    // console.log("Google Clicked");
+})
