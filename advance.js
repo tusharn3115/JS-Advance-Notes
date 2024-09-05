@@ -199,9 +199,10 @@ const addNum = (num1, num2) => ({username: "sam"});
 
 // javascript execution context -----------------------------------------------------------------------
 // 1. GLobal EC
-// when ever we create a js code, first of all Global EC is created with a variable this in which this Global execution context resides
+// When JavaScript code runs Global Execution Context (GEC) is created
+// whenever we create a js code, first of all Global EC is created with a variable this in which the Global execution context resides
 
-// for browser the execution context for this is window
+// for browser the execution context is window
 
 // 2. Function EC
 // 3. Eval EC
