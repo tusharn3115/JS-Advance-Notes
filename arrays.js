@@ -29,7 +29,7 @@ const newArr = myArr.join() // join method adds all the elements of an array int
 
 
 // slice and splice
-const newArr1 = myArr.slice(1,3) // what slice method do is it will give you the elements b/w the index 0 and 3 so result will be 1 and 2 and 3 will not be included i.e the last index given is not included 
+const newArr1 = myArr.slice(1,3) // what slice method do is it will give you the elements b/w the index 1 and 3 so result will be 1 and 2 and 3 will not be included i.e the last index given is not included 
 // console.log("A ", myArr);
 // console.log(newArr1);
 
