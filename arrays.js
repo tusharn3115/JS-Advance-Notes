@@ -81,7 +81,7 @@ let val = arr.forEach((lang) => {
 })
 // console.log(val);
 // but if we want some condition to be applied then it can't be done with the help of foreach loop
-// to do so we user filter method
+// to do so we use filter method
 
 
 
