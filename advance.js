@@ -234,6 +234,15 @@ for(const num of arr){  // num is variable and arr mean object i.e in which you 
 }
 // for of loop returns the value of array and not the key
 // we cannot iterate for of loop over a object  
+const myobj1 = {
+    cpp: "c++",
+    js: "javascript",
+    c: "c language"
+}
+
+for(const obj of myobj1){
+    // console.log(obj);  //this will give an error (myobj1 is not iterable)
+}
 
 
 // 2. For in loop: 
