@@ -36,20 +36,22 @@ setTimeout(function(){
 // The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
 
 // eg:-
-setInterval(function(){
-    // console.log("hey");
-},1000);
+// setInterval(function(){
+//     console.log("hey");
+// },1000);
 
-const start = setInterval(function(){
-    console.log("hey");
-},1000);
 
-document.querySelector("#button").addEventListener('click', function(){
+
+// assignment 1
+// on clicking start the interval starts and when clicked stop the interval will stop
+document.querySelector("#start").addEventListener('click', function(){
     console.log("STARTED");
-    console.log(start);
-});
+    const start = setInterval(function(){
+        console.log("hey");
+    },1000);
 
-document.querySelector("#button1").addEventListener('click', function(){
-    clearInterval(start);
-    console.log("STOPPED");
-})
+    document.querySelector("#stop").addEventListener('click', function(){
+        clearInterval(start);
+        console.log("STOPPED");
+    });
+});
