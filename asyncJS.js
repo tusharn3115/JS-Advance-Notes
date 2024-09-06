@@ -20,16 +20,16 @@ setTimeout(function(){
 // now there is a problem, if an event hasn't occured so there should be an option where you can stop the event.
 // to do this we have clearTimeout(reference) to do so
 
-const textChange = function(){
-    document.querySelector("#h1").innerHTML = "async js";
-}
+// const textChange = function(){
+//     document.querySelector("#h1").innerHTML = "async js";
+// }
 
-const timeout =  setTimeout(textChange, 2000);
+// const timeout =  setTimeout(textChange, 2000);
 
-document.querySelector("#button").addEventListener('click', function(){
-    clearInterval(timeout);
-    console.log("Stopped");
-})
+// document.querySelector("#button").addEventListener('click', function(){
+//     clearInterval(timeout);
+//     console.log("Stopped");
+// })
 
 
 // setInterval() ------------------------------------------------------------
@@ -38,4 +38,18 @@ document.querySelector("#button").addEventListener('click', function(){
 // eg:-
 setInterval(function(){
     // console.log("hey");
-},1000)
+},1000);
+
+const start = setInterval(function(){
+    console.log("hey");
+},1000);
+
+document.querySelector("#button").addEventListener('click', function(){
+    console.log("STARTED");
+    console.log(start);
+});
+
+document.querySelector("#button1").addEventListener('click', function(){
+    clearInterval(start);
+    console.log("STOPPED");
+})
