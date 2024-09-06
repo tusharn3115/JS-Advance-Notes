@@ -14,5 +14,19 @@
 
 // eg:-
 setTimeout(function(){
-    console.log("Hello");
-},2000)
+    // console.log("Hello");
+},2000);
+
+// now there is a problem, if an event hasn't occured so there should be an option where you can stop the event.
+// to do this we have clearTimeout(reference) to do so
+
+const textChange = function(){
+    document.querySelector("#h1").innerHTML = "async js";
+}
+
+const timeout =  setTimeout(textChange, 2000);
+
+document.querySelector("#button").addEventListener('click', function(){
+    clearInterval(timeout);
+    console.log("Stopped");
+})
