@@ -30,3 +30,12 @@ document.querySelector("#button").addEventListener('click', function(){
     clearInterval(timeout);
     console.log("Stopped");
 })
+
+
+// setInterval() ------------------------------------------------------------
+// The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
+
+// eg:-
+setInterval(function(){
+    // console.log("hey");
+},1000)
