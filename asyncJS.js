@@ -13,9 +13,9 @@
 // If you need repeated executions, use setInterval() instead.
 
 // eg:-
-setTimeout(function(){
-    // console.log("Hello");
-},2000);
+// setTimeout(function(){
+//     // console.log("Hello");
+// },2000);
 
 // now there is a problem, if an event hasn't occured so there should be an option where you can stop the event.
 // to do this we have clearTimeout(reference) to do so
@@ -44,19 +44,31 @@ setTimeout(function(){
 
 // assignment 1
 // on clicking start the interval starts and when clicked stop the interval will stop
-document.querySelector("#start").addEventListener('click', function(){
-    console.log("STARTED");
-    const start = setInterval(function(){
-        console.log("hey");
-    },1000);
+// document.querySelector("#start").addEventListener('click', function(){
+//     console.log("STARTED");
+//     const start = setInterval(function(){
+//         console.log("hey");
+//     },1000);
 
-    document.querySelector("#stop").addEventListener('click', function(){
-        clearInterval(start);
-        console.log("STOPPED");
-    });
-});
+//     document.querySelector("#stop").addEventListener('click', function(){
+//         clearInterval(start);
+//         console.log("STOPPED");
+//     });
+// });
 
 
 
 // assignment 2 
 // when click on start the color will randomly change and when we click stop the color changing will stop
+
+const randomColor = function(){
+    const hex = "0123456789ABCDEF";
+    let color = "#";
+
+    for(let i = 0; i < 6; i++){
+        color += hex[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+console.log(randomColor());
