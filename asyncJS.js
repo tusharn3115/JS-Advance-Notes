@@ -55,3 +55,8 @@ document.querySelector("#start").addEventListener('click', function(){
         console.log("STOPPED");
     });
 });
+
+
+
+// assignment 2 
+// when click on start the color will randomly change and when we click stop the color changing will stop
