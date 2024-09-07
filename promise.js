@@ -108,7 +108,7 @@ async function data(){
 
 
 
-// using promise
+// using .then() method
 fetch("https://api.github.com/users/tusharn3115")
 .then((response)=>{
     return response.json();
