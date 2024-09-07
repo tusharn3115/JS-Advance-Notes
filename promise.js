@@ -52,15 +52,43 @@ const promiseFour = new Promise(function(resolve, reject){
 });
 
 promiseFour.then((user) => {
-    console.log(user);
+    // console.log(user);
     return user.username; 
 })
 .then((username) => {  
      // the value return form the upper .then() will be received to the lower .then() also called chaining
-    console.log(username);
+    // console.log(username);
 })
 .catch((error) => {
     console.log(error);
 })
-.finally(() => console.log("The promise is either resolved or rejected"));   
+// .finally(() => console.log("The promise is either resolved or rejected"));   
 // finally block will always execute either promise is resolved or rejected
+
+
+
+// async await ---------------------------------------------------------------------------
+
+// async and await make promises easier to write. async makes a function return a Promise. await makes a function wait for a Promise.
+
+const promiseFive = new Promise(function(resolve, reject){
+    setTimeout(()=>{
+        let error = true;
+        if(!error) {
+            resolve({username: 'suraj', password: 12345});
+        }else {
+            reject("There was an error!!");
+        }
+    },1000);
+});
+
+async function consumePromiseFive(){
+    
+    try{
+        const response = await promiseFive;
+        console.log(response);
+    }catch(err){
+        console.log(err);
+    };
+};
+consumePromiseFive();
