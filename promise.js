@@ -117,3 +117,20 @@ fetch("https://api.github.com/users/tusharn3115")
     console.log(data);
 })
 .catch((error)=> console.log(error));
+
+
+
+
+// fetch --------------------------------------------------------------------------
+// fetch method is executed first because fetch ke liye ik special queue banti hai that is called micro task queue, this is queue is fast or also called priority queue
+
+async function data(){
+    try{
+        let details = await fetch("https://api.github.com/users/tusharn3115");
+        const response = await details.json();
+        console.log(response);
+    }catch(err){
+        console.log("E: ",err);
+    }
+}
+// data();
