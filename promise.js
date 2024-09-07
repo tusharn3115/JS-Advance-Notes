@@ -7,11 +7,30 @@
 // 2. fulfilled: meaning that the operation was completed successfully
 // 3. rejected: meaning that the operatio failed
 
+// eg:
 const promiseOne = new Promise(function(resolve, reject){
     // Do an async task
     // DB calls, cryptography, network call
 
     setTimeout(()=>{
         console.log("Async task is completed");
+        resolve({username: "Tushar", email: "tushar@example.com"});
+        
+        // resolve mai jo bhi parameter pass kiya jata hai wo hme .then() mai miljata hai
+        
     }, 1000)
 });
+
+promiseOne.then(function(userDetails){
+    console.log(userDetails);
+});
+
+
+// new Promise(function(resolve, reject){
+//     setTimeout(()=>{
+//         console.log("Async task 2");
+//         resolve();
+//     },1000)
+// }).then(function(){
+//     console.log("Async 2 resolved");
+// })
