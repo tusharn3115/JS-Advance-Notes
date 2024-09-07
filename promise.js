@@ -55,12 +55,12 @@ promiseFour.then((user) => {
     console.log(user);
     return user.username; 
 })
-
 .then((username) => {  
      // the value return form the upper .then() will be received to the lower .then() also called chaining
     console.log(username);
 })
-
 .catch((error) => {
     console.log(error);
 })
+.finally(() => console.log("The promise is either resolved or rejected"));   
+// finally block will always execute either promise is resolved or rejected
