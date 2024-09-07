@@ -77,7 +77,7 @@ const promiseFive = new Promise(function(resolve, reject){
         if(!error) {
             resolve({username: 'suraj', password: 12345});
         }else {
-            reject("There was an error!!");
+            // reject("There was an error!!");
         }
     },1000);
 });
@@ -86,9 +86,34 @@ async function consumePromiseFive(){
     
     try{
         const response = await promiseFive;
-        console.log(response);
+        // console.log(response);
     }catch(err){
-        console.log(err);
+        // console.log(err);
     };
 };
-consumePromiseFive();
+// consumePromiseFive();
+
+
+// using fetch() method
+async function data(){
+    try{
+        let details = await fetch("https://api.github.com/users/tusharn3115");
+        const response = await details.json();
+        console.log(response);
+    }catch(err){
+        console.log("E: ",err);
+    }
+}
+// data();
+
+
+
+// using promise
+fetch("https://api.github.com/users/tusharn3115")
+.then((response)=>{
+    return response.json();
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((error)=> console.log(error));
