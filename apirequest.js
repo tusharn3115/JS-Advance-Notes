@@ -10,10 +10,12 @@ xhr.open('GET', requestUrl);
 xhr.onreadystatechange = function(){
     console.log(xhr.readyState);
     if(xhr.readyState === 4){
-        console.log(this.responseText);  
+
+        const myData = JSON.parse(this.responseText);  // data is in string so when we will try to access we will get undefined so to show data we have to convert the response into JSON format(object)
+        console.log(`My followers: ${myData.followers}`);  
 
         //this is used to refer the current context i.e like here the current context is the function and i am refering to the functions response text
-        
+
     }
 }
 console.log(xhr.readyState);
