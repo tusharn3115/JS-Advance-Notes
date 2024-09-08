@@ -23,3 +23,29 @@ console.log(value);
 // }
 
 // as we can see the writable value is false and this property is hard coded as false that we can never be able to change the value of PI 
+
+
+
+
+// defining own property -------------------------------------------------------------
+
+// we can also define our own properties by using defineProperty()
+
+const shoes = {
+    name: "Nike",
+    price: 1299,
+    isAvailable: true,
+}
+
+// console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+
+// Object.defineProperty(chai, 'name', {
+//     writable: false,
+//     enumerable: false,
+// })
+// console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+
+for (let [key, value] of Object.entries(shoes)) {  
+    // object.entries means bring the all entries or the properties in the object 
+    console.log(`${key} : ${value}`);
+}
