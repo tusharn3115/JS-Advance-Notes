@@ -21,3 +21,5 @@ console.log(value);
 //     enumerable: false,
 //     configurable: false
 // }
+
+// as we can see the writable value is false and this property is hard coded as false that we can never be able to change the value of PI 
