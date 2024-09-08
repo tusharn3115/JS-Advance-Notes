@@ -37,13 +37,13 @@ const shoes = {
     isAvailable: true,
 }
 
-// console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+console.log(Object.getOwnPropertyDescriptor(shoes, "name"));
 
-// Object.defineProperty(chai, 'name', {
-//     writable: false,
-//     enumerable: false,
-// })
-// console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+Object.defineProperty(shoes, 'name', {
+    writable: false,
+    enumerable: false,
+})
+console.log(Object.getOwnPropertyDescriptor(shoes, "name"));
 
 for (let [key, value] of Object.entries(shoes)) {  
     // object.entries means bring the all entries or the properties in the object 
