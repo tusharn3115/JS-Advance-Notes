@@ -11,8 +11,8 @@
 // Math.PI is universal selector who's value(PI = 3.141592653589793) cannot be changed 
 // so if you will try to overwrite or change its value you will not be able to change the value, but why we cannot change the value not because its a universal selector but 
 
-const value = Object.getOwnPropertyDescriptor(Math, "PI");
-console.log(value);
+// const value = Object.getOwnPropertyDescriptor(Math, "PI");
+// console.log(value);
 
 // output:
 // {
@@ -43,6 +43,7 @@ Object.defineProperty(shoes, 'name', {
     writable: false,
     enumerable: false,
 })
+
 console.log(Object.getOwnPropertyDescriptor(shoes, "name"));
 
 for (let [key, value] of Object.entries(shoes)) {  
