@@ -243,7 +243,7 @@ const myobj1 = {
 for(const obj of myobj1){
     // console.log(obj);  //this will give an error (myobj1 is not iterable)
 }
-
+    
 
 // 2. For in loop: 
 // mostly used to iterate objects
