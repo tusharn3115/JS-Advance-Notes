@@ -36,7 +36,7 @@ div.appendChild(text);  // appendChild is adding text to div
 // adding element but this process is not optimized because it has to traverse the DOM tree
 function addLanguage(langName){
     const li = document.createElement("li");
-    li.innerHTML = `${langName}`;  // using innerHTML is traverse the DOM tree
+    li.innerHTML = `${langName}`;  // using innerHTML it traverse the DOM tree
     document.querySelector(".language").appendChild(li);
 }
 addLanguage("python");
