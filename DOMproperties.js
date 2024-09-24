@@ -1,6 +1,6 @@
 // innerHTML vs innerText vs textContent
 const element = document.querySelector("h1");
-// hi has the value <h1>Beginner To <strong>Advance</strong> JS <span style="display: none;">bottom to top</span></h1>
+// h1 has the value <h1>Beginner To <strong>Advance</strong> JS <span style="display: none;">bottom to top</span></h1>
 
 
 // 1. innerHTML
